@@ -24,6 +24,17 @@ html {
     z-index: 100;
 }
 
+.header.fixed {
+    height: auto;
+    position: fixed;
+    background: var(--background-color) url(../img/intro-bg.jpg) center no-repeat;
+}
+
+.header.fixed .header__inner{
+    padding: var(--default-half-margin) 0;
+    border-bottom: 0;
+}
+
 .wrapper {
     width: 100%;
     max-width: 86rem;
@@ -324,6 +335,7 @@ html {
 
 .reviews__image {
     position: absolute;
+    height: 100%;
     top: 50%;
     right: 0;
     z-index: 1;
@@ -354,6 +366,31 @@ html {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--main-white);
+}
+
+.slick-dots {
+    display: flex;
+    position: absolute;
+    list-style: none;
+    bottom: 10px;
+    right: 200px;
+}
+
+.slick-dots button {
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+
+    color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .5;
+    background-color: var(--main-white);
+}
+
+.slick-dots .slick-active button {
+    opacity: 1;
 }
 
 .download {
@@ -502,6 +539,25 @@ html {
 @media (max-width: 991px) {
     .nav {
         display: none;
+        flex-direction: column;
+        text-align: right;
+
+        position: absolute;
+        top: 70%;
+        right: 2%;
+
+        border-radius: 4px;
+
+        background-color: var(--main-red-light);
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav__link {
+        margin-left: 0;
+        padding: calc(var(--default-margin)/2) var(--default-margin);
     }
 
     .burger {
@@ -525,11 +581,19 @@ html {
         margin: var(--default-margin) 0 3rem;
         overflow: hidden;
     }
+
+    .reviews__image {
+        width: 100%;
+    }
     
     .reviews__content {
         width: 100%;
         padding-left: 0;
-        padding-bottom: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .slick-dots button{
+        display: none;
     }
 }
 
