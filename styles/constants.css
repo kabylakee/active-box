@@ -5,7 +5,7 @@
   --main-black: #000;
   --main-text-color: #6c7279;
   --background-color: #31344e;
-  --border-color: #31344e;
+  --border-color: #515369;
   --social-border-color: #e8ecee;
   --social-icon-color: #c6cacc;
   --reviews-background-color: #53354a;
@@ -13,6 +13,8 @@
   --footer-background-color: #3a3e64;
   --copyright-background-color: #313454;
   --copyright-text-color: #808080;
+  --feature-title-color: #2d3033;
+  --feature-info-color: #6c7279;
   --default-margin: 1rem;
   --default-half-margin: 1.5rem;
   --middle-margin: 2rem;
