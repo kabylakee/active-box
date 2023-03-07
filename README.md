@@ -4,7 +4,7 @@ This is a single-page HTML/CSS responsive web application template. It was crea
 
 ## Where to find it?
 
-Just click on [active-box]! 
+Just click on [active-box](https://kabylakee.github.io/active_box/)! 
 
 ## Built With
 <ul>
