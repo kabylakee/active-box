@@ -41,5 +41,3 @@ $(function () {
     dots: true,
   });
 });
-
-// console.log(elementOffset);
